@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Install GNU Make
         run: brew install make
+      - name: Install JDK 8
+        run: brew install openjdk@8
       - name: Remove work folders
         run: |
           echo "before"
