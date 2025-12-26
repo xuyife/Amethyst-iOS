@@ -25,7 +25,7 @@ jobs:
         run: brew install make
       - name: Install JDK 8
         run: |
-          brew install -cask temurin@8
+          brew install --cask temurin@8
           echo 'export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home"' >> ~/.zshrc
           echo 'export PATH="$JAVA_HOME/bin:$PATH"' >> ~/.zshrc
           source ~/.zshrc
