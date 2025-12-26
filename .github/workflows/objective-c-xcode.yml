@@ -22,7 +22,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Install GNU Make
-        run: brew install gmake
+        run: brew install make
       - name: Remove work folders
         run: |
           echo "before"
