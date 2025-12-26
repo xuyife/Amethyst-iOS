@@ -29,6 +29,8 @@ jobs:
           echo 'export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home"' >> ~/.zshrc
           echo 'export PATH="$JAVA_HOME/bin:$PATH"' >> ~/.zshrc
           source ~/.zshrc
+      - name: Install ldid
+        run: brew install ldid
       - name: Remove work folders
         run: |
           echo "before"
